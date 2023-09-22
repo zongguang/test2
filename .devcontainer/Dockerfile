@@ -14,3 +14,5 @@ ENV USER=$USERNAME
 
 WORKDIR /home/$USERNAME
 RUN mkdir workspace
+RUN echo "source /opt/ros/humble/setup.bash" >> /home/$USERNAME/.bashrc
+
